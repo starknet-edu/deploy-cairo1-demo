@@ -89,7 +89,7 @@ starknet new_account --account version_11_test
 - Send 0.1 ETH to it
 - Monitor the transfer transaction. Once it has passed "pending", proceed
 ```bash
-starknet deploy_account --account version_11
+starknet deploy_account --account version_11_test
 ```
 Monitor the deploy transaction. Once it has passed "pending", proceed
 
