@@ -68,7 +68,7 @@ You can use [this smol demo contract](hello_starknet.cairo) to complete this tes
 From your terminal, in the folder you installed Cairo in
 ```bash
 cd cairo
-cargo run --bin starknet-compile -- ../hello_starknet.cairo ../hello_starknet.sierra --replace-ids	
+cargo run --bin starknet-compile -- ../hello_starknet.cairo ../hello_starknet.json --replace-ids	
 ```
 Congratulations, you have compiled your contracts from Cairo to Sierra!
 
@@ -97,7 +97,7 @@ Monitor the deploy transaction. Once it has passed "pending", proceed
 Go back to the root folder of the tutorial then try to declare
 ```bash
 cd ..
-starknet declare --contract hello_starknet.sierra --account version_11
+starknet declare --contract hello_starknet.json --account version_11
 ```
 You should receive your newly declared class hash!
 
