@@ -97,14 +97,14 @@ Monitor the deploy transaction. Once it has passed "pending", proceed
 Go back to the root folder of the tutorial then try to declare
 ```bash
 cd ..
-starknet declare --contract integration/hello_henri.sierra --account version_11
+starknet declare --contract hello_starknet.sierra --account version_11
 ```
 You should receive your newly declared class hash!
 
 ### Troubleshooting
 Ok so here I had a problem. Using declare sent back:
 ```bash
-Error: OSError: [Errno 8] Exec format error: '/Users/henrilieutaud/cairo_venv_11/lib/python3.9/site-packages/starkware/starknet/compiler/v1/bin/starknet-sierra-compile'
+Error: OSError: [Errno 8] Exec format error: '~/cairo_venv_11/lib/python3.9/site-packages/starkware/starknet/compiler/v1/bin/starknet-sierra-compile'
 ```
 The reason is that cairo-lang needs to compile your sierra code, and it uses an imported rust binary 'starknet-sierra-compile' for that. But in my case, the imported binary was not built for my achitecture :-(.
 
@@ -124,8 +124,9 @@ starknet deploy --class_hash <class_hash> --account version_11
 Monitor your transaction. If it fails because of fee estimation, retry. Once your transaction is accepted_on_l2.... Congratulations! You've deployed your first Cairo 1 contract!
 
 ## Bragging on Twitter
-Don't forget to brag! And don't forget to add cool functionnalities to your contract.
+Don't forget to brag! Post your deployed contract [here](https://twitter.com/henrlihenrli/status/1638468939939282945)
 
+And don't forget to add cool functionnalities to your contract.
 The Starknet edu team will release soon the Cairo 1 version of [Cairo-101](https://github.com/starknet-edu/starknet-cairo-101). In the meanwhile, you can get ideas of what to do with Cairo 1 with [Starklings-cairo1](https://github.com/shramee/starklings-cairo1)
 
 ## Do you want to learn more?
