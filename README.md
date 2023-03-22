@@ -83,13 +83,13 @@ export STARKNET_WALLET=starkware.starknet.wallets.open_zeppelin.OpenZeppelinAcco
 
 You need to make sure your starknet CLI is set up with a proper account contract, and funds. For safety, I'll create a new one just for this tutorial.
 ```bash
-starknet new_account --account version_11_test
+starknet new_account --account version_11
 ```
 - You should get your expected contract address
 - Send 0.1 ETH to it
 - Monitor the transfer transaction. Once it has passed "pending", proceed
 ```bash
-starknet deploy_account --account version_11_test
+starknet deploy_account --account version_11
 ```
 Monitor the deploy transaction. Once it has passed "pending", proceed
 
