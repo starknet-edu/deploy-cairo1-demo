@@ -53,9 +53,10 @@ If you had cairo-lang installed previously, uninstall it
 ```bash
 pip3 uninstall cairo-lang
 ```
-Download the latest release of Cairo-lang [here](https://github.com/starkware-libs/cairo-lang/releases/tag/v0.11.0.1) in the root folder of this repo. Install it
+Install Cairo lang
 ```bash
-pip3 install cairo-lang-0.11.0.1.zip
+pip3 install ecdsa fastecdsa sympy
+pip3 install cairo-lang
 ```
 Check that you have it installed correctly
 ```bash
