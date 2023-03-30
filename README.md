@@ -25,13 +25,13 @@ Here's what you'll learn and do in this guide:
 
 To clone this repository, run the following command:
 
-```solidity
+```
 git clone https://github.com/starknet-edu/deploy-cairo1-demo
 ```
 
 Then, navigate to the directory using:
 
-```solidity
+```
 cd deploy-cairo1-demo
 ```
 
@@ -127,7 +127,7 @@ To ensure that your StarkNet CLI is set up with a proper account contract and fu
 
 - Run the following command to create a new account with version_11:
 
-```solidity
+```
 starknet new_account --account version_11
 ```
 
@@ -135,7 +135,7 @@ starknet new_account --account version_11
 - Send 0.1 ETH to it using your Argent or Braavos wallet.
 - Monitor the transfer transaction status. Once it has passed the "pending" status, proceed to deploy your account by invoking the following command:
 
-```solidity
+```
 starknet deploy_account --account version_11
 ```
 
@@ -164,7 +164,7 @@ This error occurs because cairo-lang needs to compile your Sierra code, and it u
 
 Take the *starknet-sierra-compile* from the *cairo* repository that you built locally and replace it in the Python package. Here is the command:
 
-```solidity
+```
 cp cairo/target/release/starknet-sierra-compile ~/cairo_venv_v11/lib/python3.9/site-packages/starkware/starknet/compiler/v1/bin/starknet-sierra-compile
 ```
 
